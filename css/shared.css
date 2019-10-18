@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+/** Model **/
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -5;
+  transition: all 200ms;
+}
+.fadeIn {
+  opacity: 1;
+  z-index: 5;
+}
+/** SideBar **/
+.sideBar {
+  z-index: 10;
+  background: #1d1a1a;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: all 280ms;
+}
+.slideIn {
+  left: 0;
+}
+.side_logo_con {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.side_logo_con img {
+  width: 260px;
+}
+.sideBar ul li {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #252424;
+}
+.sideBar ul li:last-child {
+  border-bottom: 1px solid #252424;
+}
+.sideBar ul li:hover,
+.sideBar ul li:focus,
+.sideBar ul li:active {
+  background: white;
+  color: #000;
+}
+/** Header **/
+header {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  border-bottom: 1px solid #454545;
+}
+.logo_con {
+  padding-top: 4px;
+  margin-left: -1.5rem;
+}
+.logo_con img {
+  width: 150px;
+}
+.main_nav {
+  display: none;
+}
+.hamburger {
+  font-size: 2rem !important;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.hamburger:hover,
+.hamburger:active,
+.hamburger:focus {
+  color: #ccc;
+}
+@media (min-width: 650px) {
+  .main_nav {
+    display: inline-block;
+  }
+  div.hamburger {
+    display: none;
+  }
+}
+.main_nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.main_nav ul li {
+  padding: 10px 15px;
+  border: 1px solid #333;
+}
+.active_link,
+.main_nav ul li:hover,
+.main_nav ul li:active {
+  background: white;
+  color: black;
+  border-color: black;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/** Footer **/
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  padding-bottom: 0;
+  background: #333;
+  color: #fdfdfd;
+}
+footer > div {
+  flex: 0 1 300px;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+footer h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffc107;
+}
+footer ul {
+  padding-left: 20px;
+  line-height: 1.5;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: square;
+}

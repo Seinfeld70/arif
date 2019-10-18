@@ -1,0 +1,63 @@
+.home_sec {
+  display: flex;
+}
+.home_sec > * {
+  flex: 1 1 50%;
+}
+.profile_pic_con {
+  overflow: hidden;
+}
+.profile_pic_con img {
+  width: 100%;
+  height: 100%;
+}
+.basic_info {
+  flex-basis: 50%;
+  padding: 6rem 2rem 2.5rem 2rem;
+  background: black url('../imgs/home_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.name_and_title {
+  direction: rtl;
+  margin-bottom: 2rem;
+}
+.full_name {
+  font-size: 2.5rem;
+  color: #ffc107;
+}
+.basic_info p {
+  line-height: 1.6;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+.key_points {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.key_points .fab,
+.key_points .fas {
+  color: #ffc107;
+  margin-right: 1rem;
+}
+ul .fa-envelope + i a {
+  color: #3cdbff;
+  border-bottom: 1px dashed;
+}
+.key_points ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.3rem;
+}
+
+@media (max-width: 700px) {
+  .home_sec {
+    flex-direction: column;
+  }
+  .key_points ul {
+    grid-template-columns: 1fr;
+  }
+}
