@@ -42,8 +42,14 @@
 }
 .sideBar ul li {
   padding: 1rem;
-  text-align: center;
+  padding-left: 3.5rem;
   border-top: 1px solid #252424;
+}
+.fa-fw {
+  font-size: 1.4rem;
+}
+.fa-fw + span {
+  padding-left: 1rem;
 }
 .sideBar ul li:last-child {
   border-bottom: 1px solid #252424;
@@ -53,6 +59,12 @@
 .sideBar ul li:active {
   background: white;
   color: #000;
+}
+.sideBar ul li:hover .fa-fw,
+.sideBar ul li:focus .fa-fw,
+.sideBar ul li:active .fa-fw,
+.active_link .fa-fw {
+  color: #dca911;
 }
 /** Header **/
 header {
@@ -138,4 +150,30 @@ footer ul {
   display: flex;
   flex-flow: column wrap;
   list-style: square;
+}
+
+/** Shared b/w home and about **/
+.home_sec,
+.about_sec {
+  display: flex;
+}
+.home_sec > *,
+.about_sec > * {
+  flex: 1 1 50%;
+}
+
+.profile_pic_con,
+.about_pic_con {
+  overflow: hidden;
+}
+.profile_pic_con img,
+.about_pic_con img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .home_sec,
+  .about_sec {
+    flex-direction: column;
+  }
 }

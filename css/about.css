@@ -1,0 +1,58 @@
+:root {
+  --orange: #bd3408;
+}
+.about_info {
+  background: #333 url('../imgs/home_bg.jpg');
+  padding: 6rem 2rem 3rem 2rem;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.about_info h1 {
+  margin-bottom: 1.4rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.about_sec + section {
+  background: #feeefe;
+  padding: 1rem 2rem;
+}
+.about_sec + section h2 {
+  text-align: center;
+  font-weight: 500;
+  color: var(--orange);
+}
+
+.job_details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 530px) {
+  .job_details {
+    flex-flow: column;
+  }
+}
+.job_details ul {
+  padding-left: 20px;
+}
+.job_details li {
+  margin-bottom: 0.8rem;
+}
+.job_details > div {
+  flex-basis: 45%;
+}
+.about_info hr {
+  border-top: 1px solid gray;
+  margin: 0 auto;
+  width: 80%;
+}
+.job_details h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.job_details div:first-child h3 {
+  color: var(--orange);
+}
