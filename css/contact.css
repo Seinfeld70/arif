@@ -1,0 +1,56 @@
+main {
+  text-align: center;
+  padding: 1rem;
+  background: #333 url('../imgs/mosaic.png');
+}
+@media (min-width: 650px) {
+  main {
+    font-size: 125%;
+    min-height: calc(70vh - 100px);
+  }
+}
+main h1,
+main h2 {
+  color: #ffc107;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact_sec {
+  text-align: justify;
+  line-height: 2;
+  color: white;
+}
+
+.contact_sources {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contact_sources > div {
+  flex: 1 1 300px;
+  margin-bottom: 1rem;
+}
+.contact_sources > div > *:first-child {
+  margin-right: 1rem;
+  color: #ffc107;
+}
+.social_con {
+  padding-left: 0.5rem;
+}
+.social_con > * {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+.fa-facebook-square {
+  color: #5389fb;
+}
+.fa-twitter-square {
+  color: #38a1f3;
+}
+.fa-instagram {
+  color: #b70dfb;
+}
+.social_con > *:hover {
+  opacity: 0.8;
+}

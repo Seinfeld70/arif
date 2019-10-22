@@ -29,10 +29,7 @@
   color: #ffc107;
   margin-right: 1rem;
 }
-ul .fa-envelope + i a {
-  color: #3cdbff;
-  border-bottom: 1px dashed;
-}
+
 .key_points ul {
   list-style-type: none;
   display: grid;

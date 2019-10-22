@@ -1,0 +1,83 @@
+main {
+  background: #333 url('../imgs/mosaic.png');
+  padding: 2rem;
+}
+main h1 {
+  color: var(--yellow);
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.work_sec {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.work_sec > div {
+  margin: 5px 8px;
+  cursor: pointer;
+}
+.work_sec > div:hover {
+  filter: opacity(0.8);
+}
+.work_sec img {
+  min-width: 200px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.5);
+}
+.photo_frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  z-index: -10;
+  transition: z-index 200ms;
+  user-select: none;
+}
+.showFrame {
+  z-index: 20;
+}
+.main_img_con,
+.main_img_con > * {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#close {
+  top: -16px;
+  right: -10px;
+}
+#next:hover,
+#prev:hover,
+#close:hover {
+  color: #f5eab3;
+}
+#next,
+#prev {
+  top: 50%;
+}
+#prev {
+  left: -10px;
+}
+#next {
+  right: -10px;
+}
+.main_img_con {
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background: #555 url('../imgs/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: unset;
+  border-radius: 5px;
+}
