@@ -28,13 +28,11 @@ function togglePhotoFrame(e, action) {
   if (action === 'hide') {
     model.classList.remove('fadeIn');
     frame.classList.remove('showFrame');
-    imgCon.style.backgroundImage = `url("./imgs/spinner.gif")`;
-    imgCon.style.backgroundSize = 'auto';
   } else if (id && action === 'show') {
     model.classList.add('fadeIn');
     frame.classList.add('showFrame');
-    imgCon.style.backgroundImage = `url("./imgs/gallery/${id}.jpg")`;
-    imgCon.style.backgroundSize = 'cover';
+    imgCon.style.backgroundImage = `url("./imgs/gallery/${id}.jpg"), url("./imgs/spinner.gif")`;
+    imgCon.style.backgroundSize = 'cover, 50px 50px';
 
     const next = document.getElementById('next');
     const prev = document.getElementById('prev');
@@ -44,9 +42,9 @@ function togglePhotoFrame(e, action) {
   }
   function nextPhoto(action) {
     if (action === 'next' && id < 15)
-      imgCon.style.backgroundImage = `url("./imgs/gallery/${++id}.jpg")`;
+      imgCon.style.backgroundImage = `url("./imgs/gallery/${++id}.jpg"), url("./imgs/spinner.gif")`;
     else if (action === 'prev' && id > 1)
-      imgCon.style.backgroundImage = `url("./imgs/gallery/${--id}.jpg")`;
+      imgCon.style.backgroundImage = `url("./imgs/gallery/${--id}.jpg"), url("./imgs/spinner.gif")`;
 
     hideNavBtn();
   }

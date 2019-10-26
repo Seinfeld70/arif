@@ -81,3 +81,28 @@ main h1 {
   cursor: unset;
   border-radius: 5px;
 }
+@media (max-width: 400px) {
+  .photo_frame {
+    transform: rotate(90deg);
+    width: 100vh;
+    height: 100vw;
+  }
+  .main_img_con {
+    width: 96%;
+    height: 90%;
+    top: 50%;
+    left: 25%;
+    transform: translate(0, 0);
+  }
+  #prev {
+    left: 10%;
+  }
+  #next {
+    right: 10%;
+  }
+  #prev,
+  #next {
+    bottom: -15px;
+    top: unset;
+  }
+}
