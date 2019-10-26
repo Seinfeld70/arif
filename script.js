@@ -43,7 +43,7 @@ function togglePhotoFrame(e, action) {
     hideNavBtn();
   }
   function nextPhoto(action) {
-    if (action === 'next' && id < 12)
+    if (action === 'next' && id < 15)
       imgCon.style.backgroundImage = `url("./imgs/gallery/${++id}.jpg")`;
     else if (action === 'prev' && id > 1)
       imgCon.style.backgroundImage = `url("./imgs/gallery/${--id}.jpg")`;
@@ -52,7 +52,7 @@ function togglePhotoFrame(e, action) {
   }
   function hideNavBtn() {
     if (id == 1) prev.style.display = 'none';
-    else if (id == 12) next.style.display = 'none';
+    else if (id == 15) next.style.display = 'none';
     else {
       next.style.display = 'inline-block';
       prev.style.display = 'inline-block';

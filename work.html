@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:url"
+      content="https://seinfeld70.github.io/arif/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chef Arif" />
+    <meta property="og:description" content="Chef Arif's Personal Website" />
+    <meta
+      property="og:image"
+      content="https://seinfeld70.github.io/arif/imgs/about_pic.jpg"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/shared.css" />
     <link rel="stylesheet" href="./css/work.css" />
@@ -119,6 +130,15 @@
         <div>
           <img id="12" src="./imgs/thumbnails/12_thumb.jpg" alt="a pic" />
         </div>
+        <div>
+          <img id="13" src="./imgs/thumbnails/13_thumb.jpg" alt="a pic" />
+        </div>
+        <div>
+          <img id="14" src="./imgs/thumbnails/14_thumb.jpg" alt="a pic" />
+        </div>
+        <div>
+          <img id="15" src="./imgs/thumbnails/15_thumb.jpg" alt="a pic" />
+        </div>
       </section>
     </main>
     <div class="photo_frame">
@@ -157,6 +177,44 @@
         </ul>
       </div>
     </footer>
+    <div class="share_con">
+      <div id="fb-root"></div>
+      <script>
+        (function(d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'facebook-jssdk');
+      </script>
+      <button class="share_btn">
+        <i class="fas fa-share-alt"></i>
+      </button>
+      <span class="share_social_con">
+        <div
+          class="fb-share-button"
+          data-href="https://seinfeld70.github.io/arif/index.html"
+          data-layout="button"
+          data-size="large"
+        ></div>
+        <a
+          href="https://twitter.com/intent/tweet?text=Chef%20Arif%0Ahttps://seinfeld70.github.io/arif%0A%0A&hashtags=chef,cooking&via=ArifHussain&original_referer=https://seinfeld70.github.io/arif&related=cooking"
+          target="_blank"
+        >
+          <span class="fab fa-twitter-square"></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/shareArticle?mini=true&url=https://seinfeld70.github.io/arif&title=Chef%20Arif&summary=A%20Personal%20website%20of%20Chef%20Arif."
+          target="_blank"
+        >
+          <span class="fab fa-linkedin"></span
+        ></a>
+      </span>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
