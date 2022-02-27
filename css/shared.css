@@ -76,6 +76,7 @@ header {
   background: #333;
   color: white;
   border-bottom: 1px solid #454545;
+  padding: 0.5rem;
 }
 .logo_con {
   padding-top: 4px;
